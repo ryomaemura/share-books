@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.formBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  background-color: #fff;
+}
+
+#nameForm,
+#commentForm,
+#searchForm {
+  width: 48%;
+  margin-bottom: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+#searchForm {
+  width: 100%;
+}
+
+.label {
+  display: block;
+  width: 100%;
+  padding: 0 5px;
+  text-align: left;
+}
+
+.inputWrapper {
+  display: flex;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  width: 30%;
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: #999;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #777;
+}
+
+.submitButtonWrapper {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.submitButtonWrapper button {
+  background-color: #007bff;
+}
+
+.submitButtonWrapper button:hover {
+  background-color: #0056b3;
+}
+
+.book-list-wrapper {
+  width: 100%;
+  margin: 0;
+}
+
+#bookList {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book-item {
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 20px;
+  padding: 0 5px;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #fff;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.22);
+  transition: 0.3s;
+}
+
+.book-item:hover {
+  box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.book-item:active {
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+.book-title {
+  margin: 10px 0 0;
+  padding: 0;
+  flex-grow: 1;
+}
+
+.book-thumbnail {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.previewLinkButton {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.previewLinkButton a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+
+.fixed {
+  max-width: 100%;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  z-index: 10;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.fixed #nameForm,
+.fixed #commentForm {
+  width: 25%;
+}
+
+.fixed #searchForm {
+  width: 30%;
+}
+
+.fixed .submitButtonWrapper {
+  width: 15%;
+  margin: 0;
+}
+
+.fixed .submitButtonWrapper button {
+  width: 100%;
+}
+
+.none {
+  display: none;
+}
